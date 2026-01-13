@@ -1,38 +1,29 @@
-# WiDev
+# WiDev 📚
 
-This template should help get you started developing with Vue 3 in Vite.
+> La documentation informatique simplifiée, faite par un étudiant pour les étudiants.
 
-## Recommended IDE Setup
+**WiDev** est une plateforme de ressources et de tutoriels conçue pour vulgariser des concepts techniques souvent complexes. L'objectif est de proposer des explications claires, concrètes et accessibles, particulièrement pour les étudiants en développement. Vous y trouverez une multitude de chose UTILES pour styliser vos site et otpimiser votre code.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+---
 
-## Recommended Browser Setup
+## 🎯 Le Projet
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+Pourquoi WiDev ? Parce que la documentation officielle est parfois indigeste. WiDev propose une approche pédagogique pour apprendre sans se perdre.
 
-## Customize configuration
+### 📑 Thématiques abordées :
+- 🌐 **Web Development** : (Focus principal actuel) HTML, CSS, JavaScript, frameworks et bonnes pratiques.
+- 🎮 **Game Dev / Modélisation 3D** : *(Prochainement)* Introduction au développement de jeux, moteurs et logique (je dis bien prochainement car je débute dans ce domaine).
+- 💻 **Informatique Pratique** : Astuces système, outils de productivité et configuration d'environnement (Git, terminaux, etc.).
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## ✨ Pourquoi consulter WiDev ?
 
-## Project Setup
+* **Langage simple** : Pas de jargon inutile, on explique les termes techniques.
+* **Approche étudiante** : Je documente ce que j'apprends.
+* **Focus pratique** : Des tutoriels directement applicables pour vos projets scolaires ou personnels.
 
-```sh
-npm install
-```
+## 🛠️ Stack Technique
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+Ce site est construit avec :
+- **Framework : VueJS**
+- **Markdown-It** : Pour la rédaction du contenu et la compilation en HTML.
+- **Déploiement** : GitHub Pages

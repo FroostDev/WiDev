@@ -1,0 +1,10 @@
+@import './base.css';
+
+#app {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    position: fixed;
+    inset: 0;
+    height: 100vh;
+    overflow: hidden;
+}

@@ -131,8 +131,8 @@ Le canvas permet aussi d'écrire du texte avec différentes polices :
 ```javascript
 ctx.font = "30px Arial";
 ctx.fillStyle = "black";
-ctx.fillText("Hello MMI !", 50, 400); // Texte plein
-ctx.strokeText("Hello MMI !", 50, 450); // Contour du texte
+ctx.fillText("Salut tout le monde !", 50, 400); // Texte plein
+ctx.strokeText("Salut tout le monde !", 50, 450); // Contour du texte
 ```
 
 ---

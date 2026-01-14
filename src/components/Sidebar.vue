@@ -152,4 +152,39 @@ const lientest = computed(() => {
             cursor: pointer;
         }
     }
+    @media (max-width: 768px) {
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            z-index: 999;
+            transform: translateX(-100%);
+            transition: transform 0.3s ease-in-out;
+            border-right: 2px solid var(--bordercolor);
+            height: 100vh;
+            overflow-y: auto;
+            max-width: 85vw;
+        }
+
+        header.mobile-open {
+            transform: translateX(0);
+        }
+
+        .subcategories {
+            min-width: unset;
+            width: auto;
+            padding: 32px 16px;
+
+            h1 {
+                width: fit-content;
+                font-size: 24px;
+            }
+
+            a {
+                width: 150px;
+                flex: 1;
+            }
+        }
+    }
 </style>

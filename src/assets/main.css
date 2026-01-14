@@ -8,3 +8,9 @@
     height: 100vh;
     overflow: hidden;
 }
+
+@media (max-width: 768px) {
+    #app {
+        grid-template-columns: 1fr;
+    }
+}

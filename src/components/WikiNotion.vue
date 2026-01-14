@@ -99,7 +99,8 @@
 }
 
 .markdown-body :deep(pre) {
-    width: fit-content;
+    max-width: 100%;
+    overflow-x: auto;
     padding: 32px 16px;
     border-radius: 4px;
     margin-bottom: 2rem;

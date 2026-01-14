@@ -1,4 +1,4 @@
-# Canvas API
+# Canvas
 
 L'élément HTML `<canvas>` est utilisé pour dessiner via JavaScript. Il peut être utilisé pour réaliser des animations, des graphiques de données, des manipulations de photos ou même du rendu de jeux vidéo.
 

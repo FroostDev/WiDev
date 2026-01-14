@@ -120,4 +120,10 @@
         filter: drop-shadow(var(--acolor) 0px 0px 10px);
     }
 }
+
+.markdown-body :deep(img) {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
 </style>

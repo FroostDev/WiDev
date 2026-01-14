@@ -1,8 +1,9 @@
 <script setup>
-import { ref } from 'vue';
+import { ref, watch, provide } from 'vue';
 import Sidebar from './components/Sidebar.vue';
 import { RouterView, useRoute } from 'vue-router';
 
+const route = useRoute();
 const isMenuOpen = ref(false);
 
 const toggleMenu = () => {
@@ -12,6 +13,12 @@ const toggleMenu = () => {
 const closeMenu = () => {
     isMenuOpen.value = false;
 }
+
+const openMenu = () => {
+    isMenuOpen.value = true;
+}
+
+provide('openMenu', openMenu);
 </script>
 
 <template>
@@ -23,7 +30,7 @@ const closeMenu = () => {
 
   <div class="overlay" :class="{ 'active': isMenuOpen }" @click="closeMenu"></div>
 
-  <Sidebar :class="{ 'mobile-open': isMenuOpen }" @click="closeMenu" />
+  <Sidebar :class="{ 'mobile-open': isMenuOpen }" />
   <RouterView />
 </template>
 
@@ -34,7 +41,7 @@ const closeMenu = () => {
   z-index: 9999;
   top: 1rem;
   right: 1rem;
-  background: none;
+  background: transparent;
   border: none;
   cursor: pointer;
   

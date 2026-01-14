@@ -1,5 +1,7 @@
 <script setup>
+import { inject } from 'vue';
 
+const openMenu = inject('openMenu');
 </script>
 
 <template>
@@ -8,10 +10,10 @@
             <h2>Bienvenue sur WiDev.</h2>
             <h3>Explorez les catégories.</h3>
             <div class="categorie-list">
-                <RouterLink to="/categorie/Programmation" class="categorie">Langage de programmation</RouterLink>
-                <RouterLink to="/categorie/Frameworks" class="categorie">Frameworks</RouterLink>
-                <RouterLink to="/categorie/Outils" class="categorie">Outils</RouterLink>
-                <RouterLink to="/categorie/Divers" class="categorie">Divers</RouterLink>
+                <RouterLink to="/categorie/Programmation" class="categorie" @click="openMenu">Langage de programmation</RouterLink>
+                <RouterLink to="/categorie/Frameworks" class="categorie" @click="openMenu">Frameworks</RouterLink>
+                <RouterLink to="/categorie/Outils" class="categorie" @click="openMenu">Outils</RouterLink>
+                <RouterLink to="/categorie/Divers" class="categorie" @click="openMenu">Divers</RouterLink>
             </div>
         </div>
     </section>

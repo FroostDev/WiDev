@@ -16,7 +16,7 @@ L'API **IntersectionObserver** permet de surveiller un élément cible quand il 
 
 ### Schéma d'explication du treshold
 
-![Image d'explication du paramètre Treshold](/src/assets/img/treshold.avif)
+![Image d'explication du paramètre Treshold](../wiki_img/treshold.avif)
 
 ---
 

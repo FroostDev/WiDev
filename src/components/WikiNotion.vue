@@ -11,6 +11,7 @@
 
     // Importer les langage dont j'ai besoin
     import 'prismjs/components/prism-javascript';
+    import 'prismjs/components/prism-markup';
     import 'prismjs/components/prism-css';
     import 'prismjs/components/prism-php';
 
@@ -73,6 +74,11 @@
 .markdown-body :deep(h3) {
     margin-top: 2rem;
     margin-bottom: 1rem;
+}
+
+.markdown-body :deep(h4) {
+    margin-top: 2rem;
+    margin-bottom: .5rem;
 }
 
 .markdown-body :deep(h2) {

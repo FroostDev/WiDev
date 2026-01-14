@@ -6,7 +6,7 @@ export const categorieData = {
 
 export const subcategorieData = {
     "javascript": {
-        "subcat": [["Exemple .md", 'exemple-md'], ["IntersectionObserver","intersectionobserver"], ["Fetch API","fetch"], ["Promesses","promise"]],
-        "markdown_file": ["exemple","intersectionobserver", "fetch", "promise"]
+        "subcat": [["Exemple .md", 'exemple-md'], ["IntersectionObserver","intersectionobserver"], ["Fetch API","fetch"], ["Promesses","promise"], ["Canvas","canvas"]],
+        // "markdown_file": ["exemple","intersectionobserver", "fetch", "promise"]
     }
 }

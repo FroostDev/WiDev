@@ -20,7 +20,7 @@ L'API **IntersectionObserver** permet de surveiller un élément cible quand il 
 
 ---
 
-### Mise en œuvre (JavaScript)
+### Mise en œuvre
 
 Voici la structure type pour initialiser un observateur :
 

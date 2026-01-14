@@ -1,10 +1,10 @@
 <script setup>
     import { ref, watch, onMounted, nextTick } from 'vue';
-    import { useRoute } from 'vue-router';
+    import { useRoute, useRouter } from 'vue-router';
     import markdownit from 'markdown-it';
     import Prism from 'prismjs';
 
-    import 'prismjs/themes/prism-tomorrow.css';
+    import 'prismjs/themes/prism-tomorrow.css'; 
 
 
     import 'prismjs/components/prism-markup-templating';
@@ -15,6 +15,7 @@
     import 'prismjs/components/prism-php';
 
     const route = useRoute();
+    const router = useRouter();
     const md = new markdownit();
     const content = ref('');
 
@@ -43,11 +44,23 @@
     onMounted(loadMarkdown);
 
     watch(() => route.params.notion, loadMarkdown);
+
+
+    // Dans ton composant qui affiche le Markdown
+    const handleClicks = (e) => {
+        const { target } = e;
+        // On vérifie si c'est un lien et s'il est interne
+        if (target && target.tagName === 'A' && target.getAttribute('href').startsWith('/')) {
+            e.preventDefault();
+            const href = target.getAttribute('href');
+            router.push(href); // On navigue avec Vue Router
+        }
+    };
 </script>
 
 <template>
     <div class="wiki-container">
-        <article v-html="content" class="markdown-body"></article>
+        <article v-html="content" class="markdown-body" @click="handleClicks"></article>
     </div>
 </template>
 
@@ -89,5 +102,21 @@
     width: fit-content;
     padding: 32px 16px;
     border-radius: 4px;
+    margin-bottom: 2rem;
+}
+
+.markdown-body :deep(ol),
+.markdown-body :deep(Ul) {
+    margin-bottom: 2rem;
+}
+
+.markdown-body :deep(a) {
+    color: var(--acolor);
+    font-weight: bold;
+    transition: .2s;
+
+    &:hover {
+        filter: drop-shadow(var(--acolor) 0px 0px 10px);
+    }
 }
 </style>

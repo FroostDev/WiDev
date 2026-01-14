@@ -6,6 +6,7 @@
   --textcolor: #2C3E50;
   --backgroundpattern: rgb(44, 62, 80, .2);
   --shadowcolor: #d1d0d0;
+  --acolor: #c24444;
 }
 
 
@@ -17,6 +18,7 @@
   --textcolor: #F2F4F5;
   --backgroundpattern: rgb(242, 244, 245, .05);
   --shadowcolor: #111112;
+  --acolor: #c24444;
 }
 
 body {
